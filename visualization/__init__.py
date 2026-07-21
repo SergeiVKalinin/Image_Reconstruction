@@ -1,11 +1,17 @@
 """Shared visualization tools.
 
-This package contains plotting and display utilities intended for reuse
-across grayscale, color, and future multichannel reconstruction packages.
-
-Visualization functions should operate on generic arrays and result
-objects without depending on the internal implementation of a specific
-reconstruction method.
+This package contains plotting utilities intended for reuse across
+grayscale, species-resolved, and future multichannel reconstruction
+packages.
 """
 
-__all__: list[str] = []
+from .images import (
+    show_grayrecon_case,
+    show_image,
+)
+
+
+__all__ = [
+    "show_grayrecon_case",
+    "show_image",
+]
